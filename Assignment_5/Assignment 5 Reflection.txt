@@ -1,0 +1,7 @@
+Barry Hamilton
+CPSC 3310
+
+Assignment 5 Reflection
+
+      The main challenge I faced was moving from writing single, long scripts to breaking everything up into functions. At first, it was tricky to pass the user inputs (like coordinates and lengths) into the helper functions as parameters without getting errors. I fixed this by making sure to convert the input inputs into floats right before passing them along. Another challenge was getting the walrus operator (:=) syntax down inside the while loops for input validation, which I solved by testing the conditions step by step until they worked cleanly.
+      Also, I found that, for the geometry program code, if you closed the turtle graphics window by clicking the ”x” before finishing with the drawing shapes menu, you would get an error when trying to draw another shape. This was because the code would attempt to do turtle graphics code to a terminated turtle graphics window. I had to find a fix around this, since I wanted my program to work this way without having to stop and start the program after each menu selection if the window was manually terminated by the user preemptively. This also proved more difficult than what it seemed at first glance. I found a solution that performs a check if the window is open when the user chooses square, circle, or triangle, and if not, opens a new graphics window.
