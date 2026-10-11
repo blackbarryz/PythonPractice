@@ -1,0 +1,9 @@
+Assignment 6 - Questions 1 and 2
+
+Question 1: Compare the for-loop and while-loop in temperature_writing.py. Which one is more suitable here, and why?
+
+Both loops can write the same Celsius-to-Fahrenheit table. The for-loop is more suitable in this program because the number of temperatures is known after I get the user's Celsius value. The range() function goes from 0 through that value, so I do not need to update a counter or check the stopping condition myself. The while-loop also works, but I have to set the starting value, check the condition, and increase the value each time. A while-loop is useful when the number of repeats is not known ahead of time.
+
+Question 2: Compare the while-loop and for-loop in temperature_searching.py. Which one is better in this context?
+
+Both loops can search the file and find the requested Celsius temperature. The for-loop is better for this search because it reads the file one line at a time automatically and stops when it finds a match or reaches the end of the file. With a while-loop, I need to read the first line before the loop and remember to read the next line inside the loop. The while-loop still works, but the for-loop is simpler for going through every line in a file.
