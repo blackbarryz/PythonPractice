@@ -1,0 +1,12 @@
+January,300.0
+February,200.0
+March,100.0
+April,200.0
+May,300.0
+June,200.0
+July,100.0
+August,200.0
+September,300.0
+October,200.0
+November,100.0
+December,200.0

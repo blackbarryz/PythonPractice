@@ -1,0 +1,22 @@
+ASSIGNMENT 7: TECHNIQUES SUMMARY
+Part 3 - Summary of Lecture 7 Techniques Applied
+
+OVERVIEW
+This summary outlines the specific Python techniques from Lecture 7 (Lists and Tuples) and Chapter 6 (Files and Exceptions) applied in completing precipitation_analysis.py and precipitation_chart.py for Assignment 7.
+
+SUMMARY OF TECHNIQUES APPLIED
+
+1. List Initialization and Repetition Operator:
+   In precipitation_analysis.py, the repetition operator ([0.0] * len(months)) was used to pre-allocate a fixed-size list for storing 12 monthly rainfall values. In precipitation_chart.py, empty lists were initialized and dynamically populated using append() as rows were read and parsed from the file.
+
+2. List Methods and Built-in Aggregations:
+   Built-in aggregate functions sum(), max(), and min() were applied directly on the precipitation list to calculate the total annual rainfall, monthly average, and identify the extreme precipitation values. The .index() list method was then used to find the positional index of peak/minimum values and map them directly to their corresponding month names in a parallel list.
+
+3. File I/O and Safety with the 'with' Statement:
+   Both programs utilize context managers (with open(...) as ...) to handle text file operations. This guarantees that file handles are properly closed upon loop completion or exception raising, preventing file locks and resource leaks. Output was written using write mode ('w') in a CSV-like format ('Month,Amount'), and read back using read mode ('r').
+
+4. Data Parsing and String Formatting:
+   When reading input line-by-line using a for loop over the file object, string methods like .strip() were used to clean trailing newline characters (\n), and .split(',') was used alongside tuple unpacking (month, amount) to convert numeric records into floating-point numbers.
+
+5. Virtual Environment and Matplotlib Bar Chart Creation:
+   A virtual environment (.venv) was configured to sandbox external dependencies. Using matplotlib.pyplot, a professional bar chart was built using plt.bar() with short month labels (generated via list comprehension month[:3]), custom styling (colors, gridlines, axis labels), and proper layout adjustments (plt.tight_layout()).
