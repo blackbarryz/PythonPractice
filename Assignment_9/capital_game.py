@@ -25,7 +25,7 @@ def main():
         state = random.choice(state_list)
         correct_capital = capitals[state]
         
-        # Match the exact prompt format from screenshot 1
+        # Match the exact prompt format
         user_guess = input(f"What is the capital of {state}? (or enter 0 to quit): ").strip()
         
         if user_guess == '0':
@@ -38,7 +38,7 @@ def main():
                 print("That is incorrect.")
                 incorrect += 1
                 
-    # Single-line summary print matched to screenshot 1
+    # Single-line summary print
     print(f"You had {correct} correct responses and {incorrect} incorrect responses.")
 
 if __name__ == '__main__':
